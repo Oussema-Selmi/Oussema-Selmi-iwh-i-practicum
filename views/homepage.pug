@@ -1,0 +1,19 @@
+doctype html
+html
+    head
+        title= title
+    body
+        h1= title
+        a(href='/update-cobj') Add to this table
+        table
+            thead
+                tr
+                    th Property 1
+                    th Property 2
+                    th Property 3
+            tbody
+                each record in data
+                    tr
+                        td= record.properties.property1
+                        td= record.properties.property2
+                        td= record.properties.property3
